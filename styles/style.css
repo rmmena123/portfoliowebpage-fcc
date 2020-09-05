@@ -158,6 +158,7 @@ main {
 .project {
     background-color: var(--background-color);
     margin-top: 2rem;
+    width: 100%;
 }
 
 #first-project {
@@ -182,7 +183,7 @@ main {
 }
 
 .project img {
-    max-width: 100%;
+    width: 100%;
     height: 15rem;
 }
 
@@ -231,5 +232,52 @@ footer {
 
 .button-contact i {
     padding-right: 0.6rem;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 426px) {
+    
+    #welcome-section #img-person img {
+        width: 20rem;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+    .nav-list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #experiences {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .project {
+        background-color: var(--background-color);
+        margin-top: 0rem;
+        width: 25rem;
+    }
+
+    .last-child {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .last-child {
+        margin-top: 0rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    #see-all {
+        width: 15rem;
+    }
 }
 
